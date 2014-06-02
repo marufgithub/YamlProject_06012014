@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12302" started-at="2014-06-02T03:03:34Z" finished-at="2014-06-02T03:03:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12302" started-at="2014-06-02T03:03:34Z" finished-at="2014-06-02T03:03:46Z">
+      <class name="testCall.CallTest">
+        <test-method status="PASS" signature="readYml()[pri:0, instance:testCall.CallTest@3969454d]" name="readYml" duration-ms="12289" started-at="2014-06-01T23:03:34Z" finished-at="2014-06-01T23:03:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readYml -->
+      </class> <!-- testCall.CallTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
