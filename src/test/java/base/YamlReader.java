@@ -20,9 +20,9 @@ public class YamlReader {
 //	public static String yamlFilePath="C:/Users/Maruf/Desktop/JunoAndJar_040614/Project_040614/OverridingOverloadingSuper/src/test/resources/resources/QA_TestData.yml";
 //	\src\test\resources\testdata\QA_TestData.yml
 	
-	public static String setYamlFilePath(){
-		return yamlFilePath;
-	}
+//	public static String setYamlFilePath(){
+//		return yamlFilePath;
+//	}
 	
 	
 	public static String getMapValue(Map <String,Object> object,String token){
@@ -53,26 +53,26 @@ public class YamlReader {
 		return object;
 	}
 	
-	private static Map<String, Object> getYamlValues(String token){
-		Reader doc;
-		try{
-			doc = new FileReader(yamlFilePath);
-			
-		}catch(FileNotFoundException ex){
-			System.out.println("File not valid or missing");
-			ex.printStackTrace();
-			return null;
-		}
-		Yaml yaml = new Yaml();
-		Map<String,Object> object = (Map<String,Object>) yaml.load(doc);
-		return parseMap(object, token + ".");
+//	private static Map<String, Object> getYamlValues(String token){
+//		Reader doc;
+//		try{
+//			doc = new FileReader(yamlFilePath);
+//			
+//		}catch(FileNotFoundException ex){
+//			System.out.println("File not valid or missing");
+//			ex.printStackTrace();
+//			return null;
+//		}
+//		Yaml yaml = new Yaml();
+//		Map<String,Object> object = (Map<String,Object>) yaml.load(doc);
+//		return parseMap(object, token + ".");
 //		return getMapValue(object, token);
-	}
+//	}
 	private static String getValue(String token) throws FileNotFoundException{
 		System.out.println("from getValue");
 		System.out.println(yamlFilePath);
-//		Reader doc = new FileReader(yamlFilePath);
-		InputStream doc = new FileInputStream(new File(yamlFilePath));
+		Reader doc = new FileReader(yamlFilePath);
+//		InputStream doc = new FileInputStream(new File(yamlFilePath));
 //		 doc = new FileInputStream(yamlFilePath);
 		System.out.println("from getValue");
 		Yaml yaml = new Yaml();
